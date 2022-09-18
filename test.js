@@ -1,0 +1,1 @@
+'<div class="end"><div class="center"><div class="message" disabled>KONIEC SMAŻENIA, STARY Z WUJKIEM PRZEJMUJĄ KUCHNIĘ</div><button id="but" onClick="newgame()" class="endButton">JESZCZE RAZ</button></div></div>'

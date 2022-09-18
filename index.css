@@ -1,0 +1,218 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+div.remove{
+    background-color: red;
+    border: 1px solid rgba(255, 255, 255, 0.355);
+    position: absolute;
+    height: 1px;
+    transform-origin: left;
+    width: 300px;
+    z-index: 99;
+    
+
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./kuchnia.png);
+    background-size: cover;
+}
+.visible{
+    visibility: hidden;
+}
+
+img.stara{
+    position: absolute;
+    bottom: 0vw;
+    left: 40vw;
+    width: 20vw;
+    height: 30vw;
+}
+
+img {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+  }
+img {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+  }
+.sólimage{
+    z-index: 5;
+    position: absolute !important;
+    width: 4vw;
+    height: 6vw;
+    animation: mymove 9s infinite linear;
+}
+#punkty{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    color: white;
+    font-weight: bold;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    font-family: sans-serif;
+    font-size: large;
+    padding: 10px;
+}
+
+@keyframes mymove {
+    from {top: 0%;}
+    to {top:200%;}
+  }
+
+  .img{
+    width: 100%;
+    height: 100%;
+  }
+
+.olej{
+    height: 8vw;
+    width: 5vw;
+}
+
+.end{
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: white;
+    z-index: 9999;
+    background-image: url(./stary.jpg);
+    background-size: cover;
+
+}
+.center{
+    width: 40vw;
+    height: 30vh;
+    vertical-align: middle;
+    text-align: center;
+    background-color: transparent;
+    z-index: 99999;
+}
+.message, .endButton{
+    font-size: xx-large;
+    z-index: 9999;
+    color: white;
+    font-weight: bold;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-family: sans-serif;
+
+}
+    
+.endButton{
+    width: 100%;
+    height: 30%;
+    z-index: 9999;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 3px;
+}
+
+.endLaser{
+    background-color: transparent;
+    border: none;
+}
+
+
+
+
+.startscreen{
+    overflow: auto;
+    float: right;
+    width: 100vw;
+    height: 100vh;
+    z-index: 99999;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.startmessage{
+    position: relative;
+    width: 45vw;
+    height: 45vh;
+    background-color: white;
+    border: 5px solid black;
+    top: 20vh;
+    padding: 10px;
+
+}
+.info{
+    height: auto;
+    padding: 10px;
+    padding-top:20px;
+}
+.button{
+    height: 10%;
+    margin: 10px;
+    padding-top: 10px;
+
+}
+.startbutton{
+    width: 100%;
+    height: auto;
+    padding:10px;
+    background-color: white;
+    border: 2px solid black;
+    font-weight: bold;
+    z-index: 99999999;
+}
+.startbutton:hover{
+    background-color: black;
+    color: white;
+}
+li{
+    font-size: 2vh;
+}
+ul{
+    padding: 1px;
+}
+h1{
+    font-size: 4vh !important
+}
+
+@media only screen and (max-width: 600px) {
+    img.stara{
+        height: 400px;
+        left: 20vw;
+        width: 60vw;
+    }
+    .center{
+        width: 80vw;
+        height: 60vh;
+    }
+    .sólimage{
+        z-index: 5;
+        position: absolute !important;
+        width: 6vh;
+        height: 10vh;
+        animation: mymove 8s infinite linear;
+    }
+    .olej{
+        height: 12vh;
+        width: 7vh;
+    }
+    .startmessage{
+        width: 100%;
+        height: 60%
+    }
+    .end{
+        height: 100%;
+    }
+    .center{
+        height: 100%
+    }
+    .endButton{
+        height: 15%
+    }
+}
